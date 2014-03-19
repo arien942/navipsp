@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>My Page</title>
+	<style>nav{display:block;}</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.3.1.css"/>
+<!-- <link rel="stylesheet" href="css/themes/keng.css"/> -->
+	<script src="js/jQuery_v1.10.2.js"></script>
+	<script src="js/jquery.mobile-1.3.1.min.js"></script>
+	
+</head>
+<body>
+
+	
+	
+	<div data-role="page" data-add-back-btn="true" data-back-btn-text="Previous">
+	
+		<div data-role="header" style="background-color:#FFA500;">
+	
+	<center><img src="image/logopoliteknik.png"></center><br>
+	<h1>JTMK/JKE CLASS NAVIGATED</h1>
+	
+	</div><!--end header-->
+	<div data-role="content">
+	
+<canvas id="myCanvas" width="500" height="460"></canvas>
+  
+    <script>
+
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+	  var con = canvas.getContext('2d');
+      context.font='20px Arial';
+      context.strokeText('JPP',80,30);
+      context.beginPath();
+      context.rect(50,0, 100, 50);
+      context.fillStyle = 'white';
+      context.lineWidth = 0;
+      context.strokeStyle = 'black';
+      context.stroke();
+
+      context.font='10px Arial';
+      context.strokeText('BILIK CISCO',245,21);
+      context.beginPath();
+      context.rect(250,0, 100, 50);
+      context.fillStyle = 'white';
+      context.lineWidth = 0;
+      context.strokeStyle = 'black';
+      context.stroke();
+
+      context.font='10px Arial';
+      context.strokeText('BILIK KAUNSELING',280,35);
+      context.beginPath();
+      context.rect(300,0, 50, 50);
+      context.fillStyle = 'white';
+      context.lineWidth = 0;
+      context.strokeStyle = 'black';
+      context.stroke();
+
+      context.font='20px Arial';
+      context.strokeText('E02',80,80);
+      context.beginPath();
+      context.rect(50,0, 100, 200);
+      context.fillStyle = 'white';
+      context.lineWidth = 0;
+      context.strokeStyle = 'black';
+      context.stroke();
+
+      context.font='20px Arial';
+      context.strokeText('E03',280,80);
+      context.beginPath();
+      context.rect(250,50, 100, 150);
+      context.fillStyle = 'white';
+      context.lineWidth = 0;
+      context.strokeStyle = 'black';
+      context.stroke();
+
+      context.font='20px Arial';
+      context.strokeText('E01',80,235);
+      context.beginPath();
+      context.rect(50,200, 100, 150);
+      context.fillStyle = 'white';
+      context.lineWidth = 0;
+      context.strokeStyle = 'black';
+      context.stroke();
+
+      context.font='20px Arial';
+      context.strokeText('E04',280,235);
+      context.beginPath();
+      context.rect(250,200, 100, 150);
+      context.fillStyle = 'white';
+      context.lineWidth = 0;
+      context.strokeStyle = 'black';
+      context.stroke();
+
+      context.font='20px Arial';
+      context.strokeText('BKE14',270,380);
+      context.beginPath();
+      context.rect(250,350, 100, 50);
+      context.fillStyle = 'white';
+      context.lineWidth = 0;
+      context.strokeStyle = 'black';
+      context.stroke();
+
+      context.font='20px Arial';
+      context.strokeText('BKE13',70,380);
+      context.beginPath();
+      context.rect(50,350, 100, 50);
+      context.fillStyle = 'white';
+      context.lineWidth = 0;
+      context.strokeStyle = 'black';
+      context.stroke();
+	  
+	  context.font='20px Arial';
+      context.strokeText('toilet',80,430);
+      context.beginPath();
+      context.rect(50,400, 100, 50);
+      context.fillStyle = 'white';
+      context.lineWidth = 0;
+      context.strokeStyle = 'black';
+      context.stroke();
+	  
+	  context.font='20px Arial';
+      context.strokeText('toilet',280,430);
+      context.beginPath();
+      context.rect(250,400, 100, 50);
+      context.fillStyle = 'white';
+      context.lineWidth = 0;
+      context.strokeStyle = 'black';
+      context.stroke();
+	  
+	  //tangga atas
+	  context.beginPath();
+      context.rect(150,25, 100, 50);
+      context.fillStyle = 'white';
+      context.lineWidth = 0;
+      context.strokeStyle = 'black';
+      context.stroke();
+    // tangga bawah
+	  context.beginPath();
+      context.rect(150,320, 100, 50);
+      context.fillStyle = 'white';
+      context.lineWidth = 0;
+      context.strokeStyle = 'black';
+      context.stroke();
+	  
+	  
+	  </script>
+	<script>
+
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.moveTo(150,320);
+ctx.lineTo(250,370);
+ctx.stroke();
+ctx.moveTo(250,320);
+ctx.lineTo(150,370);
+ctx.stroke();
+
+ctx.moveTo(150,75);
+ctx.lineTo(250,25);
+ctx.stroke();
+ctx.moveTo(250,75);
+ctx.lineTo(150,25);
+ctx.stroke();
+
+    </script>
+<script type="text/javascript">
+    var loc = window.location.hash.substr(1);
+ 
+    //start position
+    context.beginPath();
+    context.arc(200, 450, 10, 0, 2 * Math.PI, false);
+    context.fillStyle = 'white';
+    context.lineWidth = 2;
+    context.strokeStyle = 'red';
+    context.stroke();
+	
+	switch (loc)
+    {
+        case 'e01':
+			context.strokeText('E01',80,235);
+			context.beginPath();
+			context.rect(50,200, 100, 180);
+			context.stroke();
+ 
+            //draw route
+            context.beginPath();
+            context.moveTo(150, 225);
+            context.lineTo(160, 225);
+			context.lineTo(160,	300);
+			context.lineTo(200,	300);
+            context.lineTo(200, 440);
+            context.lineWidth = 2;
+            context.stroke();
+			
+			//penerangan
+			context.font='15px';
+			context.strokeText('Use stairs to level 2',245,450);
+			context.beginPath();
+			context.strokeStyle = 'black';
+			context.stroke();
+ 
+            break;
+			
+			case 'e02':
+            context.strokeText('E02',80,80);
+            context.beginPath();
+            context.rect(50,0, 100, 200);
+            context.stroke();
+ 
+            //draw route
+            context.beginPath();
+            context.moveTo(150, 80);
+            context.lineTo(160, 80);
+			context.lineTo(160, 300);
+            context.lineTo(200, 300);
+            context.lineTo(200, 440);
+            context.lineWidth = 2;
+            context.stroke();
+			
+			context.font='15px';
+			context.strokeText('Use stairs to level 2',245,450);
+			context.beginPath();
+			context.strokeStyle = 'black';
+			context.stroke();
+ 
+            break;
+			
+			case 'e03':
+            context.strokeText('E03',280,80);
+            context.beginPath();
+            context.rect(250,50, 100, 150);
+            context.stroke();
+ 
+            //draw route
+            context.beginPath();
+            context.moveTo(250, 75);
+            context.lineTo(240, 75);
+            context.lineTo(240, 300);
+			context.lineTo(200, 300);
+            context.lineTo(200, 440);
+            context.lineWidth = 2;
+            context.stroke();
+			
+			context.font='15px';
+			context.strokeText('Use stairs to level 2',245,450);
+			context.beginPath();
+			context.strokeStyle = 'black';
+			context.stroke();
+ 
+            break;
+			
+			case 'e04':
+            context.strokeText('E04',280,235);
+            context.beginPath();
+            context.rect(250,200, 100, 180);
+            context.stroke();
+ 
+            //draw route
+            context.beginPath();
+            context.moveTo(250, 225);
+            context.lineTo(240, 225);
+            context.lineTo(240, 300);
+			context.lineTo(200, 300);
+            context.lineTo(200, 440);
+            context.lineWidth = 2;
+            context.stroke();
+			
+			context.font='15px';
+			context.strokeText('Use stairs to level 2',245,450);
+			context.beginPath();
+			context.strokeStyle = 'black';
+			context.stroke();
+ 
+            break;
+			
+			case 'bke14':
+			context.strokeText('BKE14',270,380);
+			context.beginPath();
+			context.rect(250,350, 100, 50);
+			context.stroke();
+			
+			context.beginPath();
+            context.moveTo(250, 375);
+            context.lineTo(240, 375);
+            context.lineTo(240, 300);
+			context.lineTo(200, 300);
+            context.lineTo(200, 440);
+            context.lineWidth = 2;
+            context.stroke();
+			
+			context.font='15px';
+			context.strokeText('Use stairs to level 2',245,450);
+			context.beginPath();
+			context.strokeStyle = 'black';
+			context.stroke();
+			
+			break;
+			
+			case 'bke13':
+			context.strokeText('BKE13',70,380);
+			context.beginPath();
+			context.rect(50,350, 100, 50);
+			context.stroke();
+			
+			context.beginPath();
+            context.moveTo(150, 225);
+            context.lineTo(160, 225);
+			context.lineTo(160,	300);
+			context.lineTo(200,	300);
+            context.lineTo(200, 440);
+            context.lineWidth = 2;
+            context.stroke();
+			
+			context.font='15px';
+			context.strokeText('Use stairs to level 2',245,450);
+			context.beginPath();
+			context.strokeStyle = 'black';
+			context.stroke();
+ 
+			
+	}
+	</script>
+</div>
+</div>	
+</div>	
+		
+		
+		<div data-role="footer" data-theme="e" data-position="fixed">
+				<h3>@2013 Copyright POLITEKNIK SEBERANG PERAI</h3>
+		</div>
+	
+	</div>
+	</div>
