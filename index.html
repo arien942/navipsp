@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+	<title>PSP NAVIGATED</title>
+	<style>nav{display:block;}</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.3.1.css"/>
+<!-- <link rel="stylesheet" href="css/themes/keng.css"/> -->
+	<script src="js/jQuery_v1.10.2.js"></script>
+	<script src="js/jquery.mobile-1.3.1.min.js"></script>	
+	<style type="text/css">
+	.center-align
+		{
+		text-align: center;
+		}
+		.center-wrapper {
+			text-align: center;
+		}
+	.center-wrapper * {
+		margin: 0 auto;
+		}
+	
+	
+	.ui-page{
+     background: url("image/bg.jpg") 
+    no-repeat;
+	background-size:cover;
+	background-position:center center;
+	background-attachment:scroll;
+	background-size:100% 100%
+	}
+
+	</style>
+</head>
+
+<body>
+
+
+	<div data-role="header" data-position="fixed" style="background-color:#FFA500;">
+	
+	<center><img src="image/logopoliteknik.png"></center><br>
+	<h1>JTMK/JKE CLASS NAVIGATED</h1>
+	
+	</div><!--end header-->
+<div data-role="content">	
+<div id="container" style="width:800px">	
+	<div id="menu" style="height:300px;width:200px;float:left;">
+<b>Menu</b><br>
+<div data-role="navbar">
+<ul>
+				<li><a href="web.html" class="ui-btn-active ui-state-persist" data-theme="b">Main Menu</a></li><br>
+				<li><a href="lvl1.html" data-theme="b">Level 1</a></li><br>
+				<li><a href="lvl2.html" data-theme="b">Level 2</a></li><br>
+				<li><a href="lvl3.html" data-theme="b">Level 3</a></li><br>
+				<li><a href="w1.html" data-theme="b">workshop A</a></li><br>
+				<li><a href="w2.html" data-theme="b">workshop B</a></li><br>
+				<li><a href="extra.html" data-rel="dialog" data-trasition="pop" data-theme="b">EXTRA</a></li><br>
+				</ul>
+			</div>
+	</div>
+	
+<div id="content" style="height:300px;width:400px;float:left;">
+<p><b>Select your class/labs here</b></p>
+			<select ONCHANGE="location = this.options[this.selectedIndex].value;">
+			        <option value="">Select Here</option>
+					<option value="lvl1.html#bke01">BKE01</option>
+					<option value="lvl1.html#bke02">BKE02</option>
+					<option value="lvl1.html#bke03">BKE03</option>
+					<option value="lvl1.html#bke04">BKE04</option>
+					<option value="lvl1.html#bke05">BKE05</option>
+					<option value="lvl1.html#bke06">BKE06</option>
+					<option value="lvl1.html#bke07">BKE07</option>
+					<option value="lvl1.html#bke08">BKE08</option>
+					<option value="lvl1.html#bke09">BKE09</option>
+					<option value="lvl1.html#bke10">BKE10</option>
+					<option value="lvl1.html#bke11">BKE11</option>
+					<option value="lvl1.html#bke12">BKE12</option>
+					<option value="lvl2.html#bke13">BKE13</option>
+					<option value="lvl2.html#bke14">BKE14</option>
+					<option value="lvl2.html#e01">E01</option>
+					<option value="lvl2.html#e02">E02</option>
+					<option value="lvl2.html#e03">E03</option>
+					<option value="lvl2.html#e04">E04</option>
+					<option value="lvl3.html#e05">E05</option>
+					<option value="lvl3.html#e06">E06</option>
+					<option value="lvl3.html#e07">E07</option>
+					<option value="lvl3.html#e08">E08</option>
+					<option value="w1.html#e09">E09</option>
+					<option value="w1.html#e10">E10</option>
+					<option value="w2.html#e11">E11</option>
+					<option value="w2.html#e12">E12</option>
+					<option value="w1.html#e13">E13</option>
+					<option value="w1.html#e14">E14</option>
+					
+				</select>
+				</div>
+				</div>
+				
+				</div>
+		<div data-role="footer" data-position="fixed" style="background-color:#FFA500;clear:both;text-align:center;">
+Copyright © Politeknik Seberang Perai</div>	
+		
+</div>
+
+	</body>
+	</html>
